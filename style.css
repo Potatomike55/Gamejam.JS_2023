@@ -1,0 +1,64 @@
+main {
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    width: fit-content;
+    margin: 0px auto 1em auto;
+}
+
+#InventoryAndStats {
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em 2em 1em 2em;
+    top: 20%;
+    right: 1em;
+    border: 1px solid black;
+}
+
+#Inventory button {
+    display: inline;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+#Inventory div p {
+    font-weight: bold;
+    display: inline;
+}
+
+#Stats p {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+#BelowPicture div {
+    width: fit-content;
+    margin: 0px auto 0px auto;
+}
+
+#RoomButtons button {
+    margin: 0em 1em 0em 1em;
+}
+
+@media (max-width: 1280px) {
+    main {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #InventoryAndStats {
+        position: static;
+        margin: 1em auto 1em auto;
+    }
+}
