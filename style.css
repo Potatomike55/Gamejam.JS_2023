@@ -4,15 +4,6 @@ main {
     margin: 0 auto 0 auto;
 }
 
-header {
-    width: 100%;
-}
-
-header h1 {
-    width: fit-content;
-    margin: 0px auto 1em auto;
-}
-
 #InventoryAndStats {
     position: fixed;
     height: fit-content;
@@ -34,9 +25,46 @@ header h1 {
     display: inline;
 }
 
-#Stats p {
-    font-style: italic;
-    margin-bottom: 5px;
+#RoomPicture {
+    position: relative;
+}
+
+#bg {
+    z-index: -1;
+}
+
+#left_char, #right_char {
+    position: absolute;
+    width: 25%;
+    height: auto;
+}
+
+#left_saal, #right_saal {
+    position: absolute;
+    width: 50%;
+    height: auto;
+}
+
+#left_char {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#right_char {
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#left_saal {
+    left: 0;
+    bottom: 0;
+}
+
+#right_saal {
+    right: 0;
+    bottom: 0;
 }
 
 #BelowPicture div {
@@ -53,8 +81,23 @@ header h1 {
         width: 100%;
     }
 
-    img {
+    #RoomPicture {
         width: 100%;
+        height: auto;
+    }
+
+    #RoomPicture img {
+        position: relative;
+    }
+
+    #bg {
+        width: 100%;
+        height: auto;
+    }
+
+    #left_char, #right_char, #left_saal, #right_saal {
+        width: 50%;
+        height: auto;
     }
 
     #InventoryAndStats {
